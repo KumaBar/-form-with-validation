@@ -31,11 +31,9 @@ export default {
     name() {
       const regex = /^[a-zа-яё\s]+$/iu; //eslint-disable-line
       if (regex.test(this.name)) {
-        console.log("только буквы");
         this.form.nameConfirmed = true;
         this.setNameError(true);
       } else {
-        console.log("не только буквы");
         this.form.nameConfirmed = false;
       }
     },

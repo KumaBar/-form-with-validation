@@ -26,10 +26,8 @@ export default {
     phonenumber() {
       const regex = /^(\+7|7|8)?[\s\-]?\(?[489][0-9]{2}\)?[\s\-]?[0-9]{3}[\s\-]?[0-9]{2}[\s\-]?[0-9]{2}$/; //eslint-disable-line
       if (regex.test(this.phonenumber)) {
-        console.log("телефон прошел");
         this.form.phoneConfirmed = true;
       } else {
-        console.log("телефон не прошел");
           this.form.phoneConfirmed = false;
       }
     },

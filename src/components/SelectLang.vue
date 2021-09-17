@@ -60,10 +60,8 @@ export default {
   watch: {
     currentLang() {
       if (this.currentLang.id) {
-        console.log("язык прошел");
         this.form.langConfirmed = true;
       } else {
-        console.log("язык не прошел");
          this.form.langConfirmed = false;
       }
     },
